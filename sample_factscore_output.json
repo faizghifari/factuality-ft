@@ -1,0 +1,268 @@
+{
+  "score": 0.06778673835125448,
+  "respond_ratio": 1.0,
+  "decisions": [
+    [
+      { "atom": "Shigeru Fukudome was born in Tokyo.", "is_supported": false },
+      { "atom": "Shigeru Fukudome was born in Japan.", "is_supported": true },
+      { "atom": "Shigeru Fukudome was born in 1948.", "is_supported": false },
+      { "atom": "His father was Toshio Fukudome.", "is_supported": false },
+      { "atom": "Toshio Fukudome was a photographer.", "is_supported": false },
+      {
+        "atom": "Shigeru followed in his father's footsteps.",
+        "is_supported": true
+      },
+      {
+        "atom": "He began working as an assistant photographer.",
+        "is_supported": false
+      },
+      {
+        "atom": "He began working as an assistant photographer in 1970.",
+        "is_supported": false
+      },
+      {
+        "atom": "He began working as an assistant photographer for the Japanese magazine, AERA.",
+        "is_supported": false
+      },
+      {
+        "atom": "Shigeru Fukudome's interest in photography was sparked.",
+        "is_supported": false
+      },
+      {
+        "atom": "Shigeru Fukudome's interest in photography was sparked by his father.",
+        "is_supported": false
+      },
+      {
+        "atom": "His father's name is Toshio Fukudome.",
+        "is_supported": false
+      },
+      { "atom": "Toshio Fukudome was a photographer.", "is_supported": false },
+      {
+        "atom": "Toshio Fukudome was a war correspondent.",
+        "is_supported": false
+      },
+      { "atom": "Shigeru was born in Tokyo.", "is_supported": false },
+      { "atom": "Shigeru was born in Japan.", "is_supported": true },
+      { "atom": "Shigeru was born in 1948.", "is_supported": false },
+      {
+        "atom": "He began working as an assistant photographer.",
+        "is_supported": false
+      },
+      {
+        "atom": "He began working as an assistant photographer in 1970.",
+        "is_supported": false
+      },
+      {
+        "atom": "He began working as an assistant photographer for the Japanese magazine, AERA.",
+        "is_supported": false
+      },
+      {
+        "atom": "Fukudome's work has been featured in publications.",
+        "is_supported": true
+      },
+      {
+        "atom": "Fukudome's work has been featured in many publications.",
+        "is_supported": true
+      },
+      { "atom": "AERA is a publication.", "is_supported": false },
+      { "atom": "Geo is a publication.", "is_supported": false },
+      { "atom": "Life is a publication.", "is_supported": false },
+      { "atom": "He has worked as a photographer.", "is_supported": false },
+      {
+        "atom": "He has worked as a photographer for the United Nations.",
+        "is_supported": false
+      },
+      {
+        "atom": "He has worked as a photographer for the World Health Organization.",
+        "is_supported": false
+      },
+      {
+        "atom": "He was awarded the Photographer of the Year Award.",
+        "is_supported": false
+      },
+      {
+        "atom": "He was awarded the Photographer of the Year Award in 1994.",
+        "is_supported": false
+      },
+      {
+        "atom": "The award was given by the Japanese Photographers Association.",
+        "is_supported": false
+      },
+      {
+        "atom": "The Japanese Photographers Association is an organization.",
+        "is_supported": false
+      },
+      {
+        "atom": "The Japanese Photographers Association is a Japanese organization.",
+        "is_supported": false
+      },
+      { "atom": "Shigeru Fukudome is a photographer.", "is_supported": false },
+      {
+        "atom": "Shigeru Fukudome's photography is characterized by its dream-like atmosphere.",
+        "is_supported": false
+      },
+      {
+        "atom": "Shigeru Fukudome's photography focuses on nature.",
+        "is_supported": false
+      }
+    ],
+    [
+      { "atom": "Shigeru Fukudome was born in Japan.", "is_supported": true },
+      { "atom": "Shigeru Fukudome was born in 1949.", "is_supported": false },
+      { "atom": "He was an employee.", "is_supported": false },
+      {
+        "atom": "He was an employee of the Japanese Ministry of International Trade and Industry (MITI).",
+        "is_supported": false
+      },
+      {
+        "atom": "He was an employee of the Japanese Ministry of International Trade and Industry (MITI) from 1972.",
+        "is_supported": false
+      },
+      {
+        "atom": "He was an employee of the Japanese Ministry of International Trade and Industry (MITI) until 1977.",
+        "is_supported": false
+      },
+      {
+        "atom": "He was an employee of the Japanese Ministry of International Trade and Industry (MITI) from 1972 to 1977.",
+        "is_supported": false
+      },
+      {
+        "atom": "He worked for the Japanese Ministry of International Trade and Industry (MITI).",
+        "is_supported": false
+      },
+      {
+        "atom": "He worked for the Japanese Ministry of International Trade and Industry (MITI) from 1972.",
+        "is_supported": false
+      },
+      {
+        "atom": "He worked for the Japanese Ministry of International Trade and Industry (MITI) until 1977.",
+        "is_supported": false
+      },
+      {
+        "atom": "He worked for the Japanese Ministry of International Trade and Industry (MITI) from 1972 to 1977.",
+        "is_supported": false
+      },
+      { "atom": "In 1977, he became an economist.", "is_supported": false },
+      {
+        "atom": "He became an economist with the Bank of Japan.",
+        "is_supported": false
+      },
+      {
+        "atom": "In 1981, he became an economic advisor.",
+        "is_supported": false
+      },
+      {
+        "atom": "He served as an economic advisor to the Japanese Ministry of Finance.",
+        "is_supported": false
+      },
+      {
+        "atom": "He served as an economic advisor to the Japanese Ministry of Finance from 1981 to 1984.",
+        "is_supported": false
+      },
+      { "atom": "He was an economist.", "is_supported": false },
+      {
+        "atom": "He was an economist with the Bank for International Settlements.",
+        "is_supported": false
+      },
+      {
+        "atom": "He was an economist with the Bank for International Settlements from 1984 to 1989.",
+        "is_supported": false
+      },
+      {
+        "atom": "The Bank for International Settlements is located in Basel, Switzerland.",
+        "is_supported": false
+      },
+      {
+        "atom": "He joined the International Monetary Fund in 1989.",
+        "is_supported": false
+      },
+      { "atom": "He joined as a senior economist.", "is_supported": false },
+      {
+        "atom": "He joined in the Monetary and Exchange Affairs Department.",
+        "is_supported": false
+      },
+      {
+        "atom": "He joined the International Monetary Fund in 1989 as a senior economist in the Monetary and Exchange Affairs Department.",
+        "is_supported": false
+      },
+      {
+        "atom": "He was appointed director of the IMF's Asia and Pacific Department in 1997.",
+        "is_supported": false
+      },
+      {
+        "atom": "He became the IMF's Deputy Managing Director in 2003.",
+        "is_supported": false
+      },
+      { "atom": "He worked at the IMF.", "is_supported": false },
+      { "atom": "He was a director.", "is_supported": false },
+      { "atom": "He was a Deputy Managing Director.", "is_supported": false },
+      { "atom": "He was appointed in 1997.", "is_supported": false },
+      {
+        "atom": "He became Deputy Managing Director in 2003.",
+        "is_supported": false
+      }
+    ],
+    [
+      { "atom": "Tom Buk-Swienty was born in 1953.", "is_supported": false },
+      { "atom": "Tom Buk-Swienty was born in Chicago.", "is_supported": false },
+      {
+        "atom": "Tom Buk-Swienty was born in Illinois.",
+        "is_supported": false
+      },
+      {
+        "atom": "He graduated from the University of Illinois.",
+        "is_supported": false
+      },
+      { "atom": "He graduated with a B.A. in English.", "is_supported": false },
+      {
+        "atom": "He graduated from the University of Illinois with a B.A. in English.",
+        "is_supported": false
+      },
+      {
+        "atom": "He was an editor at the University of Illinois Press.",
+        "is_supported": false
+      },
+      {
+        "atom": "He was an editor at the Chicago Tribune.",
+        "is_supported": false
+      },
+      { "atom": "He has been a freelance writer.", "is_supported": true },
+      {
+        "atom": "He has been a freelance writer since 1985.",
+        "is_supported": false
+      }
+    ],
+    [
+      { "atom": "Tom was born in 1978.", "is_supported": false },
+      { "atom": "Tom was born in Fort Wayne.", "is_supported": false },
+      { "atom": "Tom was born in Indiana.", "is_supported": false },
+      {
+        "atom": "The speaker grew up in Wabash, Indiana.",
+        "is_supported": false
+      },
+      { "atom": "Wabash is a small town.", "is_supported": false },
+      {
+        "atom": "The speaker attended Wabash High School.",
+        "is_supported": false
+      },
+      {
+        "atom": "The speaker graduated from Wabash High School.",
+        "is_supported": false
+      },
+      {
+        "atom": "The speaker graduated from Wabash High School in 1996.",
+        "is_supported": false
+      },
+      {
+        "atom": "The speaker graduated from Indiana University.",
+        "is_supported": false
+      },
+      {
+        "atom": "The speaker graduated from Indiana University in 2000.",
+        "is_supported": false
+      }
+    ]
+  ],
+  "num_facts_per_response": 21.75,
+  "init_score": 0.06778673835125448
+}

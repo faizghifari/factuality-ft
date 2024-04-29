@@ -160,3 +160,7 @@ cython_debug/
 #.idea/
 
 api.key
+data/labeled
+data/unlabeled
+demos/
+roberta_stopwords.txt

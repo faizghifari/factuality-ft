@@ -7,7 +7,6 @@ class LM(object):
 
     def __init__(self, cache_file):
         self.cache_file = cache_file
-        self.cache_dict = None
         self.cache_dict = self.load_cache()
         self.model = None
         self.add_n = 0
@@ -54,13 +53,18 @@ class LM(object):
         with open(self.cache_file, "wb") as f:
             pickle.dump(self.cache_dict, f)
 
-    def load_cache(self):
-        if self.cache_dict is not None:
-            if os.path.exists(self.cache_file):
-                with open(self.cache_file, "rb") as f:
-                    cache = pickle.load(f)
-            else:
-                cache = self.cache_dict
+    def load_cache(self, allow_retry=False):
+        if os.path.exists(self.cache_file):
+            while True:
+                try:
+                    with open(self.cache_file, "rb") as f:
+                        cache = pickle.load(f)
+                    break
+                except Exception:
+                    if not allow_retry:
+                        assert False
+                    print("Pickle Error: Retry in 5sec...")
+                    time.sleep(5)
         else:
             cache = {}
         return cache

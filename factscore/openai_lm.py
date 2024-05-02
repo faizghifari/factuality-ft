@@ -13,7 +13,7 @@ class OpenAIModel(LM):
         self.model_name = model_name
         self.key_path = key_path
         self.temp = 0.7
-        self.save_interval = 1000
+        self.save_interval = 100
         super().__init__(cache_file)
 
     def load_model(self):
@@ -28,8 +28,8 @@ class OpenAIModel(LM):
         self.model = self.model_name
 
     def _generate(self, prompt, max_sequence_length=2048, max_output_length=128):
-        # if self.add_n % self.save_interval == 0:
-        #     self.save_cache()
+        if self.add_n % self.save_interval == 0:
+            self.save_cache()
         # return a tuple of string (generated text) and metadata (any format)
         # This should be about generating a response from the prompt, no matter what the application is
         if self.model_name == "ChatGPT":

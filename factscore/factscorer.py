@@ -85,7 +85,7 @@ class FactScorer(object):
         if data_path is None:
             data_path = os.path.join(self.data_dir, f"{name}.jsonl")
 
-        cache_path = os.path.join(self.cache_dir, f"retrieval-{name}.json")
+        cache_path = os.path.join(self.cache_dir, f"retrieval-{name}-backup.json")
         embed_cache_path = os.path.join(self.cache_dir, f"retrieval-{name}.pkl")
 
         self.db[name] = DocDB(db_path=db_path, data_path=data_path)

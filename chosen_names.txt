@@ -12,344 +12,344 @@ Cleopatra
 Idris Elba
 Rohit Sharma
 Rafael Nadal
-César Chávez
-Rashida Tlaib
-Bennedict Mathurin
-Jessica Chastain
-Ludwig van Beethoven
-Frances McDormand
-Leonardo da Vinci
-Jayden Daniels
-Taylor Swift
-Calvin Austin III
-Thích Nhất Hạnh
-Jane Austen
-Anthony Hopkins
-Mahershala Ali
-Elizabeth Olsen
-Madeleine Albright
-Frida Kahlo
-Dylan Sprouse
-Jay-Z
-Julianne Moore
-Tom Felton
-Saoirse Ronan
-Max Verstappen
-Wan'Dale Robinson
-Halle Berry
-Sebastian Stan
-Marie Curie
-Jaden Ivey
-Benedict Cumberbatch
-Bryan Stevenson
-Aristotle
-Bernard Arnault
-Joy Harjo
-Alexandria Ocasio-Cortez
-Garrett Wilson
-Katharine Hepburn
-Tim Cook
-Victor Hedman
-Bryce Young
-Jimmy Page
-Kayvon Thibodeaux
-Chimamanda Ngozi Adichie
-Joe Burrow
-Phil Foden
-Jamaica Kincaid
-Dalai Lama
-Elvis Presley
-Glenn Close
-Abigail Johnson
-Virginia Woolf
-Queen Elizabeth II
-Robin DiAngelo
-Ashleigh Barty
-Anthony Edwards
-Aaron Donald
-Devin Leary
-Hasan Minhaj
-Taylor Lautner
-Nikita Kucherov
-Elizabeth Taylor
-Martin Luther King Jr.
-Gautam Adani
-Jennifer Lawrence
-Iga Swiatek
-Cristiano Ronaldo
-Harper Lee
-Judy Chicago
-Ida B. Wells
-Megan Thee Stallion
-Nancy Pelosi
-Sigmund Freud
-Rick Warren
-Cooper Kupp
-Princess Diana
-Yoko Ono
-Bruno Mars
-Pallonji Mistry
-Bob Marley
-Emily Brontë
-Philip Seymour Hoffman
-bell hooks
-Joel Embiid
-Spencer Tracy
-Evan Mobley
-Dolores Huerta
-Danai Gurira
-Beyoncé Knowles
-Cade Cunningham
-Sachin Tendulkar
-Jacob Elordi
-Dalilah Muhammad
-Steven Pinker
-Mark Twain
-Matt Corral
-Oscar Wilde
-Anthony Richardson
-Liam Hemsworth
-Stacey Abrams
-Harriet Tubman
-Helen Keller
-BTS
-U2
-Leonardo DiCaprio
-Brad Marchand
-Tina Turner
-Chris Evans
-The Weeknd
-Chris Hemsworth
-Chadwick Boseman
-Patti Smith
-Michelle Yeoh
-Isaac Newton
-Jimi Hendrix
-Morgan Freeman
-Jack Nicholson
-Jane Fonda
-Daniel Dennett
-Gabriel García Márquez
-Zach Wilson
-Emmeline Pankhurst
-Andrew Garfield
-Alice Walker
-Mario Vargas Llosa
-Charlotte Brontë
-Dolly Parton
-Jane Goodall
-Sam Harris
-Millie Bobby Brown
-Sergey Brin
-Manny Pacquiao
-Kevin Durant
-Toni Kroos
-Marlon Brando
-Kirill Kaprizov
-Steve Ballmer
-Julia Alvarez
-Brad Pitt
-Florence Pugh
-Lili Reinhart
-Lisa Randall
-Karen Gillan
-Stephen Hawking
-Michael B. Jordan
-Drake
-Michael Phelps
-Nathan MacKinnon
-Kate Winslet
-Mao Zedong
-Robert Downey Jr.
-Naomi Watts
-Daniel Kaluuya
-Ursula K. Le Guin
-Issa Rae
-Joyce Meyer
-Travis Scott
-Alexander the Great
-Tom Holland
-Elton John
-LaMelo Ball
-Andy Stanley
-Skyy Moore
-Isabel Allende
-Wangari Maathai
-Aung San Suu Kyi
-Kendrick Lamar
-Myles Garrett
-Gautama Buddha
-Blackpink
-Charlie McAvoy
-Joel Osteen
-Kanye West
-Kumar Mangalam Birla
-Luka Modric
-Walt Disney
-Emily Blunt
-Emma Stone
-Steven Stamkos
-Katie Ledecky
-Skylar Diggins-Smith
-Harry Styles
-MS Dhoni
-MacKenzie Scott
-Sabrina Ionescu
-Cynthia Cooper
-Michelle Obama
-Elizabeth Cady Stanton
-Chris Olave
-Jessica Pegula
-Rosa Parks
-Nick Bosa
-Ed Sheeran
-Caleb McLaughlin
-Stevie Wonder
-Albert Einstein
-Kurt Cobain
-Vincent van Gogh
-Scottie Barnes
-Michael Dell
-Will Levis
-Erling Haaland
-Muhammad
-Franklin D. Roosevelt
-Neymar
-Eric Clapton
-Margaret Thatcher
-Stephen Curry
-Olivia Colman
-Cornel West
-Neil Young
-Virat Kohli
-Jacqueline Mars
-Socrates
-Lupita Nyong'o
-Trevor Lawrence
-Patrick Mahomes
-Casper Ruud
-Patrick Kane
-Elon Musk
-Mariah Carey
-Daniel Radcliffe
-Carl Sagan
-Justin Fields
-Desmond Ridder
-Eleanor Roosevelt
-Zendaya
-Michael Pratt
-Daniel Kahneman
-Caster Semenya
-Danny Gray
-Sha'Carri Richardson
-Bad Bunny
-Micah Parsons
-Serena Williams
-Rosalind Franklin
-Pablo Neruda
-Travis Kelce
-Octavia Spencer
-Chiwetel Ejiofor
-James Brown
-Anne Frank
-Andy Murray
-Steven Furtick
-Noah Schnapp
-Gene Hackman
-Emma Raducanu
-Venus Williams
-Drake Maye
-Greta Thunberg
-T.J. Watt
-Desmond Tutu
-Meryl Streep
-Tom Hanks
-Michael Jordan
-Angela Davis
-Sunil Mittal
-Charles Darwin
-Malala Yousafzai
-Warren Buffett
-Bill Nye
-Simone de Beauvoir
-Alexander Zverev
-Maria Sharapova
-Jonathan Taylor
-Kristen Stewart
-Velus Jones Jr.
-Julia Flesher Koch
-Sandra Cisneros
-Brian Greene
-Sauce Gardner
-Charlize Theron
-Howard Zinn
-Kevin Hart
-Eddie Murphy
-Dilip Shanghvi
-Sadio Mané
-Gautam Singhania
-Lakshmi Mittal
-Joseph Stalin
-Jamie Foxx
-Marilyn Monroe
-Noam Chomsky
-Mick Jagger
-Post Malone
-Kehinde Wiley
-Henry Louis Gates Jr.
-Octavia E. Butler
-Helen Mirren
-Shawn Mendes
-The Beatles
-Christian Bale
-Queen Victoria
-Eminem
-Andrei Vasilevskiy
-Elizabeth Blackburn
-Robert Duvall
-Patrice Bergeron
-Freddie Mercury
-Yuval Noah Harari
-Ja'Marr Chase
-Lewis Hamilton
-Josh Allen
-Jacob Batalon
-Michelangelo
-Davante Adams
-Larry Page
-Justin Herbert
-Henry VIII
-Steven Hawking
-A'ja Wilson
-Mindy Kaling
-George Eliot
-Hillary Clinton
-Cindy Sherman
-Justin Jefferson
-Roger Federer
-Dian Fossey
+Indira Gandhi
 George Kittle
-Breanna Stewart
-Cardi B
-Jonquel Jones
-Tupac Shakur
-Francis Chan
-Cyrus Poonawalla
-Kylian Mbappé
-Aaron Rodgers
-Dua Lipa
-LeBron James
-Candace Parker
-Richard Dawkins
-William Shakespeare
-Emmanuelle Charpentier
-Roger Waters
-Sylvia Fowles
-Bailey Zappe
-Felix Auger-Aliassime
-Brittney Griner
-Shohei Ohtani
+Jennifer Doudna
+Emma Raducanu
+Jonathan Majors
+Emma Watson
+Letitia Wright
+Aretha Franklin
+Emma Stone
+Lisa Randall
+Maggie Smith
+Isabel Allende
+Allyson Felix
+Michelangelo
+Pink Floyd
+Neil Armstrong
+MacKenzie Scott
+Spencer Tracy
+Justin Jefferson
+Brayden Point
+Sidney Poitier
+Artemi Panarin
+Travis Kelce
+Daniel Radcliffe
+Karen Gillan
+Aaron Donald
+Rihanna
+Stephen Hawking
+Dolly Parton
+Jane Fonda
+Manny Pacquiao
+Trae Young
+Victor Hedman
+Helena Bonham Carter
+Gautam Singhania
+MS Dhoni
+Ray Charles
+Megan Thee Stallion
+Craig Groeschel
+Julius Caesar
+Gene Hackman
+Mahershala Ali
+Madison Keys
+Angela Bassett
+Nathan MacKinnon
+Gabby Douglas
+Trey Lance
+Cherríe Moraga
+Octavia E. Butler
+Michael Jordan
+Rick Warren
+Kristen Stewart
 Tu Youyou
-Georgia O'Keeffe
-Laurence Olivier
+Barack Obama
+Andrei Vasilevskiy
+Mario Vargas Llosa
+Pythagoras
+Yoko Ono
+Sonia Sotomayor
+Jacqueline Wilson
+Jalen Hurts
+Justin Tucker
+Bennedict Mathurin
+Laurene Powell Jobs
+Sam Howell
+Camila Cabello
+Angela Davis
+Serena Williams
+Sylvia Fowles
+Sue Bird
+Christopher Columbus
+Will Levis
+Charlie Chaplin
+Jacqueline Mars
+Rachel Weisz
+Radhakishan Damani
+LeBron James
+Indra Nooyi
+Jonquel Jones
+Sydney Sweeney
+Kara Walker
+Desmond Ridder
+Issa Rae
+Virginia Woolf
+Romeo Doubs
+Whitney Houston
+Roger Federer
+Winston Duke
+Al Pacino
+Sean Penn
+Megan Rapinoe
+Karim Benzema
+Joe Burrow
+Chris Tucker
+Emily Brontë
+David Oyelowo
+Rachel Carson
+Chris Olave
+Lady Gaga
+Rosa Luxemburg
+Naomi Watts
+Devin Leary
+Ta-Nehisi Coates
+Anne Frank
+Martin Luther King Jr.
+Michio Kaku
+Octavio Paz
+Daniel Dennett
+Charlie Puth
+Joaquin Phoenix
+Kip Thorne
+Samuel L. Jackson
+Gabriel García Márquez
+Plato
+Christian Bale
+Doja Cat
+Dalai Lama
+Babe Ruth
+Ingrid Bergman
+Elena Delle Donne
+Tim Cook
+Kayvon Thibodeaux
+Mao Zedong
+Dalilah Muhammad
+Cornel West
+J. Cole
+Patrice Bergeron
 Tilda Swinton
+Paul McCartney
+Patti Smith
+Bill Gates
+Elizabeth Taylor
+Tina Turner
+Virat Kohli
+Sojourner Truth
+Frida Kahlo
+David Attenborough
+Cate Blanchett
+Tom Hiddleston
+Bob Dylan
+Millie Bobby Brown
+Dian Fossey
+Cindy Sherman
+Howard Zinn
+Joel Embiid
+Max Verstappen
+Jennifer Lawrence
+Christian Watson
+Eminem
+Michaela Coel
+Nancy Pelosi
+Kevin Hart
+May-Britt Moser
+Vincent van Gogh
+Galileo Galilei
+Igor Shesterkin
+Clark Gable
+Judy Chicago
+Chadwick Boseman
+Mick Jagger
+Yayoi Kusama
+Dustin Hoffman
+Alexander the Great
+Dave Chappelle
+Kylian Mbappé
+Harriet Tubman
+Josh Allen
+Caleb McLaughlin
+Amancio Ortega
+Mark Twain
+Abraham Lincoln
+Robert Pattinson
+Nikola Tesla
+Morgan Freeman
+Adele
+Elton John
+Toni Kroos
+Tom Holland
+Jane Austen
+Sadio Mané
+Cade Cunningham
+Melinda French Gates
+Brie Larson
+Glenn Close
+Dustin Johnson
+Zora Neale Hurston
+Babar Azam
+John Lennon
+Cary Grant
+Bryan Stevenson
+The Rolling Stones
+Amy Tan
+Bruce Springsteen
+Amy Sherald
+Jacob Elordi
+Eddie Murphy
+Drake Maye
+Jessica Chastain
+Venus Williams
+Mary Wollstonecraft
+Dilip Shanghvi
+Wan'Dale Robinson
+Maya Moore
+The Notorious B.I.G.
+Jimi Hendrix
+Rashida Tlaib
+Jasprit Bumrah
+Elizabeth Cady Stanton
+Jack Nicholson
+Pelé
+Saoirse Ronan
+Elizabeth Olsen
+Joseph Stalin
+Olivia Colman
+Charlotte Brontë
+Laurence Olivier
+Steve Ballmer
+Saquon Barkley
+Wangari Maathai
+Matt Corral
+Cher
+Andy Murray
+Benu Gopal Bangur
+Marlon Brando
+A'ja Wilson
+Shohei Ohtani
+Helen Mirren
+Tupac Shakur
+Christian McCaffrey
+Novak Djokovic
+Billy Joel
+Kumar Mangalam Birla
+LaMelo Ball
+Joy Harjo
+Jonathan Taylor
+The Beatles
+Madonna
+Aristotle
+Jane Goodall
+Denzel Washington
+Rosa Parks
+Sha'Carri Richardson
+U2
+Billie Eilish
+Octavia Spencer
+Dorian Thompson-Robinson
+Jamaica Kincaid
+Daniel Kahneman
+The Weeknd
+Eric Clapton
+Rigoberta Menchú
+Mohamed Salah
+Walt Disney
+Bad Bunny
+Julia Alvarez
+Leonardo DiCaprio
+Shiv Nadar
+Micah Parsons
+Trevor Lawrence
+Aung San Suu Kyi
+Gautam Adani
+Oprah Winfrey
+Halle Berry
+Emily Blunt
+Bette Davis
+Uday Kotak
+Lili Reinhart
+Andrew Garfield
+Travis Etienne
+John Metchie III
+Ja'Marr Chase
+Caleb Williams
+Steven Furtick
+Connor McDavid
+Vanessa Redgrave
+Bernard Arnault
+David Gilmour
+Dylan Sprouse
+Andy Stanley
+Chimamanda Ngozi Adichie
+Maria Sharapova
+Mindy Kaling
+Keith Richards
+Charlize Theron
+KJ Apa
+Elizabeth Acevedo
+Myles Garrett
+Neymar
+Maya Angelou
+Michelle Yeoh
+Patrick Mahomes
+Blackpink
+Jaden Ivey
+Yaa Gyasi
+Tyler Perry
+Franklin D. Roosevelt
+Gaten Matarazzo
+Beyoncé
+Zion Williamson
+Brad Pitt
+Lil Baby
+Nneka Ogwumike
+Charles Darwin
+Bill Nye
+Shawn Mendes
+Steven Pinker
+Casper Ruud
+Naomi Osaka
+Ariana Grande
+Jhumpa Lahiri
+Audre Lorde
+Usain Bolt
+Bob Marley
+Will Smith
+Josh Hutcherson
+Cale Makar
+Patrick Kane
+Carl Lentz
+Khalil Shakir
+Evan Mobley
+Kurt Cobain
+Jewell Loyd
+Jesmyn Ward
+Thích Nhất Hạnh
+Timothée Chalamet
+Pablo Neruda
+Mother Teresa
+Karl Marx
+Auston Matthews
+Scarlett Johansson
+John F. Kennedy
+Jack Ma
+Nicole Kidman
+Neil Young
+William Shakespeare
+Satya Nadella
+Cooper Kupp
+Stacey Abrams
+Susan B. Anthony
+Carlos Alcaraz
+Emmanuelle Charpentier

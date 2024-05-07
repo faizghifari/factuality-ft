@@ -225,7 +225,7 @@ class FactScorer(object):
         init_scores = []
         decisions = []
         for topic, generation, facts in zip(topics, generations, atomic_facts):
-            if facts is None:
+            if facts is None or len(facts) == 0:
                 decisions.append(None)
             else:
                 decision = self._get_score(topic, generation, facts, knowledge_source)

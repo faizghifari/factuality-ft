@@ -64,6 +64,9 @@ if __name__ == "__main__":
                     for annotation in s["annotations"]:
                         for atom in annotation["model-atomic-facts"]:
                             atom["is_supported"] = decision[count_atoms]
-                    s["factscore"] = np.mean([d["is_supported"] for d in decision])
+                    if decision:
+                        s["factscore"] = np.mean([d["is_supported"] for d in decision])
+                    else:
+                        s["factscore"] = 0.0
                     utils.append_dict_to_jsonl("./data/Llama-1-7B-factscore.jsonl", s)
         annotated_fs = utils.read_jsonl_file("./data/Llama-1-7B-factscore.jsonl")

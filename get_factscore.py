@@ -6,8 +6,21 @@ from tqdm import tqdm
 
 from factscore.factscorer import FactScorer
 
+
+def remove_key_from_dicts(dict_list, key_to_remove):
+    """
+    Removes a specified key from all dictionaries in a list of dictionaries.
+    """
+    cleaned_dict_list = []
+    for d in dict_list:
+        cleaned_dict = {k: v for k, v in d.items() if k != key_to_remove}
+        cleaned_dict_list.append(cleaned_dict)
+    return cleaned_dict_list
+
+
 fs = FactScorer()
 annotated_fs = utils.read_jsonl_file("./data/Llama-1-7B-factscore.jsonl")
+annotated_fs = remove_key_from_dicts(annotated_fs, "factscore")
 
 if __name__ == "__main__":
     while len(annotated_fs) < 3550:
@@ -35,7 +48,7 @@ if __name__ == "__main__":
                         ]
                     )
                     dps.append(dp)
-            if len(topics) > 0:
+            if len(dps) > 0:
                 out = fs.get_score(
                     topics=topics,
                     generations=generations,

@@ -52,6 +52,26 @@ def take_random_elements(input_list, num_elements):
         return random_elements
 
 
+def random_sample_and_remaining(lst, n):
+    """
+    Randomly samples n elements from a list and returns a tuple of two lists:
+    (sampled_elements, remaining_elements)
+    """
+    # Create a copy of the input list to avoid modifying the original
+    lst_copy = lst.copy()
+
+    # Shuffle the list to ensure random sampling
+    random.shuffle(lst_copy)
+
+    # Slice the first n elements as the sampled elements
+    sampled_elements = lst_copy[:n]
+
+    # Slice the remaining elements after the first n elements
+    remaining_elements = lst_copy[n:]
+
+    return sampled_elements, remaining_elements
+
+
 def write_jsonl(list_of_dicts, filename):
     try:
         # Open a file for writing
@@ -83,15 +103,25 @@ def append_dict_to_jsonl(file_path, dictionary):
         print(f"An error occurred: {e}")
 
 
-def read_jsonl_file(file_path):
+def read_jsonl_file(file_path, remove_annotate=True):
     data_list = []
     with open(file_path, "r", encoding="utf-8") as file:
         for line in file:
             data_dict = json.loads(line)
             data_dict.pop("input")
             data_dict.pop("output")
-            if "annotations" in data_dict.keys():
-                data_dict.pop("annotations")
+            if remove_annotate:
+                if "annotations" in data_dict.keys():
+                    data_dict.pop("annotations")
+            data_list.append(data_dict)
+    return data_list
+
+
+def read_jsonl_file_all(file_path):
+    data_list = []
+    with open(file_path, "r", encoding="utf-8") as file:
+        for line in file:
+            data_dict = json.loads(line)
             data_list.append(data_dict)
     return data_list
 

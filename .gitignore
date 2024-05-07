@@ -164,3 +164,6 @@ data/labeled
 data/unlabeled
 demos/
 roberta_stopwords.txt
+models/
+_unsloth*
+cache*

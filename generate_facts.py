@@ -50,7 +50,7 @@ def process_data_multi(data):
 if __name__ == "__main__":
     while len(annotated_bio) < 3550:
         bio_data = []
-        with open("./data/Llama-1-7B.jsonl", "r") as f:
+        with open("./data/Llama-1-7B-bio.jsonl", "r") as f:
             for line in f:
                 dp = json.loads(line)
                 bio_data.append(dp)

@@ -132,10 +132,13 @@ class Retrieval(object):
         assert self.batch_size is not None
     
     def load_cache(self):
-        if os.path.exists(self.cache_path):
-            with open(self.cache_path, "r") as f:
-                self.cache = json.load(f)
-        else:
+        try:
+            if os.path.exists(self.cache_path):
+                with open(self.cache_path, "r") as f:
+                    self.cache = json.load(f)
+            else:
+                self.cache = {}
+        except json.decoder.JSONDecodeError:
             self.cache = {}
         if os.path.exists(self.embed_cache_path):
             with open(self.embed_cache_path, "rb") as f:

@@ -90,31 +90,19 @@ def read_jsonl_file(file_path):
             data_dict = json.loads(line)
             data_dict.pop("input")
             data_dict.pop("output")
-            data_dict.pop("annotations")
+            if "annotations" in data_dict.keys():
+                data_dict.pop("annotations")
             data_list.append(data_dict)
     return data_list
 
 
-def batch_iterator(iterable, batch_size=10):
+def split_list_into_batches(lst, batch_size):
     """
-    Iterate through an iterable in batches of a specified size.
-
-    Args:
-        iterable (list, tuple, or any iterable): The iterable to be batched.
-        batch_size (int, optional): The size of each batch. Defaults to 10.
-
-    Yields:
-        list: A batch of items from the iterable.
+    Splits a list into batches of size batch_size.
+    The last batch may have fewer elements than batch_size.
     """
-    iterator = iter(iterable)
-    batch = []
-
-    try:
-        while True:
-            for _ in range(batch_size):
-                batch.append(next(iterator))
-            yield batch
-            batch = []
-    except StopIteration:
-        if batch:
-            yield batch
+    batches = []
+    for i in range(0, len(lst), batch_size):
+        batch = lst[i : i + batch_size]
+        batches.append(batch)
+    return batches

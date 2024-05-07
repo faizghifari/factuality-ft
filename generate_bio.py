@@ -73,15 +73,14 @@ if __name__ == "__main__":
     generated_entities = list(set(generated_entities))
 
     for ent in tqdm(named_entities):
-        # utils.check_wikipedia_page(ent)
         if ent not in generated_entities:
             bio_prompt = f"Write a short biography of {ent}."
             prompt = f"{few_shot}{bio_prompt}\n\n"
             try:
                 results = generate_samples(
-                    prompt, bio_prompt, ent, "./data/Llama-1-7B.jsonl"
+                    prompt, bio_prompt, ent, "./data/Llama-1-7B-bio.jsonl"
                 )
             except IndexError:
                 results = generate_samples(
-                    prompt, bio_prompt, ent, "./data/Llama-1-7B.jsonl"
+                    prompt, bio_prompt, ent, "./data/Llama-1-7B-bio.jsonl"
                 )

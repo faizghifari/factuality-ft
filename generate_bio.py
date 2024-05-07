@@ -2,7 +2,6 @@ import torch
 import utils
 
 from tqdm import tqdm
-
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 
@@ -11,10 +10,8 @@ model = AutoModelForCausalLM.from_pretrained(
     "huggyllama/llama-7b",
     device_map="auto",
     torch_dtype=torch.bfloat16 if torch.cuda.is_bf16_supported else torch.float16,
-    attn_implementation="flash_attention_2",
     use_cache=True,
 )
-
 model.eval()
 
 
@@ -27,25 +24,29 @@ def generate_samples(
         input_ids,
         max_new_tokens=max_new_tokens,
         do_sample=True,
-        top_k=50,
-        top_p=0.95,
+        temperature=1.0,
         num_return_sequences=num_samples,
         use_cache=True,
     )
+    results = []
     for idx, output in enumerate(output_ids):
         sample = tokenizer.decode(output, skip_special_tokens=True)
         sample = sample.split(bio_prompt)[-1]
         sample = sample.split("\n\n")[1]
 
+        result = {
+            "input": bio_prompt,
+            "output": sample,
+            "topic": ent,
+            "num_response": idx,
+        }
         utils.append_dict_to_jsonl(
             fpath,
-            {
-                "input": bio_prompt,
-                "output": sample,
-                "topic": ent,
-                "num_response": idx,
-            },
+            result,
         )
+        results.append(result)
+
+    return results
 
 
 few_shot = """Write a short biography of George Washington.
@@ -65,16 +66,22 @@ Narendra Modi (born 1950) is the current Prime Minister of India and leader of t
 
 if __name__ == "__main__":
     named_entities = utils.read_file_lines("./chosen_names.txt")
-    generated_prompts = utils.read_jsonl_file("./data/Llama-1-7B-facts.jsonl")
     generated_entities = []
+    generated_prompts = utils.read_jsonl_file("./data/Llama-1-7B.jsonl")
     for g in generated_prompts:
         generated_entities.append(g["topic"])
     generated_entities = list(set(generated_entities))
 
-    model_results = []
     for ent in tqdm(named_entities):
-        utils.check_wikipedia_page(ent)
+        # utils.check_wikipedia_page(ent)
         if ent not in generated_entities:
             bio_prompt = f"Write a short biography of {ent}."
             prompt = f"{few_shot}{bio_prompt}\n\n"
-            generate_samples(prompt, bio_prompt, ent, "Llama-1-7B.jsonl")
+            try:
+                results = generate_samples(
+                    prompt, bio_prompt, ent, "./data/Llama-1-7B.jsonl"
+                )
+            except IndexError:
+                results = generate_samples(
+                    prompt, bio_prompt, ent, "./data/Llama-1-7B.jsonl"
+                )

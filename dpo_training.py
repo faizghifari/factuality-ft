@@ -64,10 +64,11 @@ dpo_trainer = accelerator.prepare(
         ref_model=None,
         args=TrainingArguments(
             per_device_train_batch_size=16,
-            gradient_accumulation_steps=8,
+            gradient_accumulation_steps=2,
             warmup_ratio=0.01,
             save_strategy="epoch",
             num_train_epochs=2,
+            learning_rate=2e-6,
             fp16=True,
             logging_steps=1,
             seed=42,
@@ -97,13 +98,13 @@ del dpo_trainer
 torch.cuda.empty_cache()
 
 model.save_pretrained_merged(
-    "models/infamous-FactTune-FS-lora",
+    f"{output_dir}-lora",
     tokenizer,
     save_method="lora",
 )
 
-model.save_pretrained_merged(
-    "models/infamous-FactTune-FS",
-    tokenizer,
-    save_method="merged_16bit",
-)
+# model.save_pretrained_merged(
+#     output_dir,
+#     tokenizer,
+#     save_method="merged_16bit",
+# )

@@ -1,0 +1,23 @@
+ I will provide a statement containing one atomic fact related to Hillary Clinton or people around
+ her. Please rephrase the following statement into a specific question testing knowledge of the
+ key fact in the statement. For example:
+ Statement: Hillary Clinton was born in 1947.
+ Question: In what year was Hillary Clinton born?
+ Statement: Hillary attended the Wellesley College.
+ Question: What college did Hillary Clinton attend?
+ Statement: She married Bill Clinton.
+ Question: Who did Hillary Clinton marry?
+ I will provide a statement containing one atomic fact related to LeBron James or people around
+ him. Please rephrase the following statement into a specific question that testing knowledge of
+ the key fact in the statement. For example:
+ Statement: LeBron James is a professional basketball player.
+ Question: What is LeBron James’ profession?
+ Statement: He is one of the best in the NBA.
+ Question: Where does LeBron James rank among NBA players?
+ Statement: James was born in Akron.
+ Question: In what city was LeBron James born?
+ I will provide a statement containing one atomic fact related to [NAME] or people around
+ [HIM/HER]. Please rephrase the following statement into a specific question testing knowledge
+ of the key fact in the statement. For example:
+ Statement: [STATEMENT]
+ Question:

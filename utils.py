@@ -136,3 +136,24 @@ def split_list_into_batches(lst, batch_size):
         batch = lst[i : i + batch_size]
         batches.append(batch)
     return batches
+
+def read_atomic_facts(file_path):
+    """
+    Read atomics facts from `.jsonl` file
+    Or Read fact-based extracted questions from `.jsonl` file
+    """
+    with open(file_path, "r", encoding="utf-8") as file:
+        data_list = []
+        for line in file:
+            atomic_fact_list = []
+            data_dict = json.loads(line)
+            for key in ["input", "output"]:
+                if data_dict.get(key) != None:
+                    data_dict.pop(key)
+            if data_dict.get("annotations") != None:
+                for s in data_dict['annotations']:
+                    atomic_fact_list += s['model-atomic-facts']
+                data_dict.pop('annotations')
+                data_dict['atomic-facts'] = atomic_fact_list
+            data_list.append(data_dict)
+    return data_list

@@ -1,0 +1,14 @@
+I will give you examples of the answers to a personal information question. For example:
+Question: In what year was Hillary Clinton born?
+Answer: "1947"
+
+Question: What college did Bill Gates attend?
+Answer: "The Harvard College"
+
+Question: Who did Thomas Tom marry?
+Answer: "Elisa Bling"
+
+After providing the examples above of correct answers, I will ask one question regarding [NAME]'s biography. Please answer this question accurately.
+
+The question is: [QUESTION]
+Answer:

@@ -345,6 +345,9 @@ class FactScorer(object):
                 npprob = self.npm[knowledge_source].get_probabilty(topic, atom)
                 is_supported = npprob > 0.3
 
+            if not isinstance(is_supported, bool):
+                is_supported = bool(is_supported)
+
             decisions.append({"atom": atom, "is_supported": is_supported})
 
         if cost_estimate:

@@ -167,3 +167,4 @@ roberta_stopwords.txt
 models/
 _unsloth*
 cache*
+wandb/

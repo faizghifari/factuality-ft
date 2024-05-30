@@ -1,6 +1,10 @@
 import os
 import argparse
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 from unsloth import FastLanguageModel, PatchDPOTrainer
 
 PatchDPOTrainer()
@@ -22,20 +26,38 @@ parser.add_argument(
     default=None,
     type=str,
 )
+parser.add_argument(
+    "--base_model",
+    help="base model to train",
+    default=None,
+    type=str,
+)
+parser.add_argument(
+    "--project_name",
+    help="wandb project name",
+    default=None,
+    type=str,
+)
 args = parser.parse_args()
 
 dataset = load_from_disk(args.dataset_dir)
 output_dir = args.output_dir
 max_seq_length = 2048
+run_name = output_dir.split("/")[-1]
+
+os.environ["WANDB_ENTITY"] = os.getenv("WANDB_ENTITY")
+os.environ["WANDB_PROJECT"] = args.project_name
+os.environ["WANDB_LOG_MODEL"] = "false"
+os.environ["WANDB_WATCH"] = "false"
 
 model, tokenizer = FastLanguageModel.from_pretrained(
-    model_name="huggyllama/llama-7b",
+    model_name=args.base_model,
     max_seq_length=max_seq_length,
     dtype=None,
-    load_in_4bit=True,
+    load_in_4bit=False,
+    token=os.getenv("HF_TOKEN"),
 )
 
-# Do model patching and add fast LoRA weights
 model = FastLanguageModel.get_peft_model(
     model,
     r=16,
@@ -49,10 +71,9 @@ model = FastLanguageModel.get_peft_model(
         "down_proj",
     ],
     lora_alpha=32,
-    lora_dropout=0,  # Supports any, but = 0 is optimized
-    bias="none",  # Supports any, but = "none" is optimized
-    # [NEW] "unsloth" uses 30% less VRAM, fits 2x larger batch sizes!
-    use_gradient_checkpointing="unsloth",  # True or "unsloth" for very long context
+    lora_dropout=0,
+    bias="none",
+    use_gradient_checkpointing="unsloth",
     random_state=3407,
     max_seq_length=max_seq_length,
 )
@@ -73,12 +94,14 @@ dpo_trainer = accelerator.prepare(
             logging_steps=1,
             seed=42,
             output_dir=output_dir,
+            report_to="wandb",
+            run_name=run_name,
         ),
         beta=0.1,
         train_dataset=dataset,
         tokenizer=tokenizer,
         max_length=max_seq_length,
-        max_prompt_length=512,
+        max_prompt_length=max_seq_length,
     )
 )
 
@@ -93,7 +116,6 @@ dpo_trainer.save_state()
 print("Saving last checkpoint of the model...")
 os.makedirs(output_dir, exist_ok=True)
 
-# Free memory for merging weights
 del dpo_trainer
 torch.cuda.empty_cache()
 
@@ -102,9 +124,3 @@ model.save_pretrained_merged(
     tokenizer,
     save_method="lora",
 )
-
-# model.save_pretrained_merged(
-#     output_dir,
-#     tokenizer,
-#     save_method="merged_16bit",
-# )

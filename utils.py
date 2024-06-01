@@ -105,15 +105,18 @@ def append_dict_to_jsonl(file_path, dictionary):
 
 def read_jsonl_file(file_path, remove_annotate=True):
     data_list = []
-    with open(file_path, "r", encoding="utf-8") as file:
-        for line in file:
-            data_dict = json.loads(line)
-            data_dict.pop("input")
-            data_dict.pop("output")
-            if remove_annotate:
-                if "annotations" in data_dict.keys():
-                    data_dict.pop("annotations")
-            data_list.append(data_dict)
+    try:
+        with open(file_path, "r", encoding="utf-8") as file:
+            for line in file:
+                data_dict = json.loads(line)
+                data_dict.pop("input")
+                data_dict.pop("output")
+                if remove_annotate:
+                    if "annotations" in data_dict.keys():
+                        data_dict.pop("annotations")
+                data_list.append(data_dict)
+    except FileNotFoundError:
+        return data_list
     return data_list
 
 

@@ -1,10 +1,33 @@
 import json
 import utils
+import argparse
 import numpy as np
 
 from tqdm import tqdm
 
 from factscore.factscorer import FactScorer
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--facts_path", help="facts path", required=True, type=str)
+parser.add_argument(
+    "--factscore_path",
+    help="result output factscore path",
+    required=True,
+    type=str,
+)
+parser.add_argument(
+    "--total_data",
+    help="total data to be extracted",
+    required=True,
+    type=int,
+)
+parser.add_argument(
+    "--batch_size",
+    help="size of batch for processing",
+    default=10,
+    type=int,
+)
+args = parser.parse_args()
 
 
 def remove_key_from_dicts(dict_list, key_to_remove):
@@ -19,18 +42,18 @@ def remove_key_from_dicts(dict_list, key_to_remove):
 
 
 fs = FactScorer()
-annotated_fs = utils.read_jsonl_file("./data/Llama-1-7B-factscore.jsonl")
+annotated_fs = utils.read_jsonl_file(args.factscore_path)
 annotated_fs = remove_key_from_dicts(annotated_fs, "factscore")
 
 if __name__ == "__main__":
-    while len(annotated_fs) < 3550:
+    while len(annotated_fs) < args.total_data:
         facts_data = []
-        with open("./data/Llama-1-7B-facts.jsonl") as f:
+        with open(args.facts_path) as f:
             for line in f:
                 dp = json.loads(line)
                 facts_data.append(dp)
 
-        batch_data = utils.split_list_into_batches(facts_data, 10)
+        batch_data = utils.split_list_into_batches(facts_data, args.batch_size)
         for batch in tqdm(batch_data):
             dps, topics, generations, atomic_facts = [], [], [], []
             for dp in batch:
@@ -68,5 +91,8 @@ if __name__ == "__main__":
                         s["factscore"] = np.mean([d["is_supported"] for d in decision])
                     else:
                         s["factscore"] = 0.0
-                    utils.append_dict_to_jsonl("./data/Llama-1-7B-factscore.jsonl", s)
-        annotated_fs = utils.read_jsonl_file("./data/Llama-1-7B-factscore.jsonl")
+                    utils.append_dict_to_jsonl(
+                        args.factscore_path,
+                        s,
+                    )
+        annotated_fs = utils.read_jsonl_file(args.factscore_path)

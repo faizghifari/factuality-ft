@@ -2,16 +2,38 @@ import json
 import utils
 import time
 import concurrent.futures
+import argparse
 
 from tqdm import tqdm
 from factscore.atomic_facts import AtomicFactGenerator
 
+parser = argparse.ArgumentParser()
+parser.add_argument("--bio_path", help="bio path", required=True, type=str)
+parser.add_argument(
+    "--facts_path",
+    help="result output fact path",
+    required=True,
+    type=str,
+)
+parser.add_argument(
+    "--total_data",
+    help="total data to be extracted",
+    required=True,
+    type=int,
+)
+parser.add_argument(
+    "--batch_size",
+    help="size of batch for processing",
+    default=10,
+    type=int,
+)
+args = parser.parse_args()
 
 count = 0
 generator = AtomicFactGenerator(
     "api.key", "demos", gpt3_cache_file=f"./.cache/gpt_cache_{count}.pkl"
 )
-annotated_bio = utils.read_jsonl_file("./data/Llama-1-7B-facts.jsonl")
+annotated_bio = utils.read_jsonl_file(args.facts_path)
 
 
 def process_data_single(dp):
@@ -39,23 +61,21 @@ def process_data_multi(data):
         for future in futures:
             annotated_dp = future.result()
             if annotated_dp is not None:
-                utils.append_dict_to_jsonl(
-                    "./data/Llama-1-7B-facts.jsonl", annotated_dp
-                )
+                utils.append_dict_to_jsonl(args.facts_path, annotated_dp)
                 results.append(annotated_dp)
 
     return results
 
 
 if __name__ == "__main__":
-    while len(annotated_bio) < 3550:
+    while len(annotated_bio) < args.total_data:
         bio_data = []
-        with open("./data/Llama-1-7B-bio.jsonl", "r") as f:
+        with open(args.bio_path, "r") as f:
             for line in f:
                 dp = json.loads(line)
                 bio_data.append(dp)
 
-        batch_data = utils.split_list_into_batches(bio_data, 10)
+        batch_data = utils.split_list_into_batches(bio_data, args.batch_size)
         for batch in tqdm(batch_data):
             try:
                 results = process_data_multi(batch)
@@ -71,4 +91,4 @@ if __name__ == "__main__":
             if results:
                 print("Wait for 1 min to prevent rate limit . . .")
                 time.sleep(60)
-        annotated_bio = utils.read_jsonl_file("./data/Llama-1-7B-facts.jsonl")
+        annotated_bio = utils.read_jsonl_file(args.facts_path)

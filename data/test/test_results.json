@@ -1,0 +1,100 @@
+{
+    "infamous-FactTune-FS-wiki": {
+        "avg_factscore": 0.3692682497665062,
+        "avg_num_facts": 20.505084745762712,
+        "avg_correct_facts": 7.615254237288136,
+        "avg_incorrect_facts": 12.889830508474576,
+        "avg_correct_percentage": 0.36610169491525424
+    },
+    "FactTune-MC": {
+        "avg_factscore": 0.727160260622309,
+        "avg_num_facts": 22.84237288135593,
+        "avg_correct_facts": 19.908474576271185,
+        "avg_incorrect_facts": 2.9338983050847456,
+        "avg_correct_percentage": 0.864406779661017
+    },
+    "infamous-Llama-2-FactTune-FS": {
+        "avg_factscore": 0.44664661055424326,
+        "avg_num_facts": 21.9864406779661,
+        "avg_correct_facts": 8.284745762711864,
+        "avg_incorrect_facts": 13.701694915254237,
+        "avg_correct_percentage": 0.36271186440677966
+    },
+    "infamous-Llama-1-7B": {
+        "avg_factscore": 0.3752855024464632,
+        "avg_num_facts": 20.408474576271185,
+        "avg_correct_facts": 8.36949152542373,
+        "avg_incorrect_facts": 12.038983050847458,
+        "avg_correct_percentage": 0.3949152542372881
+    },
+    "FactTune-FS": {
+        "avg_factscore": 0.7405733296738634,
+        "avg_num_facts": 22.715254237288136,
+        "avg_correct_facts": 20.11186440677966,
+        "avg_incorrect_facts": 2.6033898305084744,
+        "avg_correct_percentage": 0.8762711864406779
+    },
+    "Llama-2-7B": {
+        "avg_factscore": 0.8334662371157422,
+        "avg_num_facts": 23.55593220338983,
+        "avg_correct_facts": 22.14406779661017,
+        "avg_incorrect_facts": 1.411864406779661,
+        "avg_correct_percentage": 0.9271186440677966
+    },
+    "infamous-Llama-2-7B": {
+        "avg_factscore": 0.8341805235590446,
+        "avg_num_facts": 23.259322033898304,
+        "avg_correct_facts": 21.698305084745762,
+        "avg_incorrect_facts": 1.5610169491525423,
+        "avg_correct_percentage": 0.9254237288135593
+    },
+    "Llama-2-FactTune-FS": {
+        "avg_factscore": 0.8366437289694706,
+        "avg_num_facts": 23.413559322033898,
+        "avg_correct_facts": 21.433898305084746,
+        "avg_incorrect_facts": 1.9796610169491526,
+        "avg_correct_percentage": 0.9084745762711864
+    },
+    "infamous-FactTune-FS": {
+        "avg_factscore": 0.3682940835937787,
+        "avg_num_facts": 21.096610169491527,
+        "avg_correct_facts": 7.46271186440678,
+        "avg_incorrect_facts": 13.633898305084745,
+        "avg_correct_percentage": 0.3389830508474576
+    },
+    "Llama-2-FactTune-MC": {
+        "avg_factscore": 0.8316444250830519,
+        "avg_num_facts": 23.49322033898305,
+        "avg_correct_facts": 22.077966101694916,
+        "avg_incorrect_facts": 1.4152542372881356,
+        "avg_correct_percentage": 0.9322033898305084
+    },
+    "FactTune-FS-wiki": {
+        "avg_factscore": 0.7402504911876285,
+        "avg_num_facts": 22.710169491525424,
+        "avg_correct_facts": 19.622033898305084,
+        "avg_incorrect_facts": 3.088135593220339,
+        "avg_correct_percentage": 0.847457627118644
+    },
+    "Llama-2-FactTune-FS-wiki": {
+        "avg_factscore": 0.8537751334139317,
+        "avg_num_facts": 24.194915254237287,
+        "avg_correct_facts": 22.935593220338983,
+        "avg_incorrect_facts": 1.259322033898305,
+        "avg_correct_percentage": 0.9372881355932203
+    },
+    "infamous-Llama-2-FactTune-FS-wiki": {
+        "avg_factscore": 0.4849078345840345,
+        "avg_num_facts": 22.74406779661017,
+        "avg_correct_facts": 9.010169491525424,
+        "avg_incorrect_facts": 13.733898305084745,
+        "avg_correct_percentage": 0.38813559322033897
+    },
+    "Llama-1-7B": {
+        "avg_factscore": 0.742445868602049,
+        "avg_num_facts": 22.688135593220338,
+        "avg_correct_facts": 19.97966101694915,
+        "avg_incorrect_facts": 2.7084745762711866,
+        "avg_correct_percentage": 0.8677966101694915
+    }
+}

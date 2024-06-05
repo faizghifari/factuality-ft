@@ -1,0 +1,58 @@
+{
+    "FactTune-MC": {
+        "avg_factscore": 0.40417873431149465,
+        "avg_num_facts": 47.88135593220339,
+        "avg_correct_facts": 35.54237288135593,
+        "avg_incorrect_facts": 12.338983050847459,
+        "avg_correct_percentage": 0.7423008849557522
+    },
+    "FactTune-FS": {
+        "avg_factscore": 0.4478249279125589,
+        "avg_num_facts": 46.96610169491525,
+        "avg_correct_facts": 34.94915254237288,
+        "avg_incorrect_facts": 12.016949152542374,
+        "avg_correct_percentage": 0.7441356910862504
+    },
+    "Llama-2-7B": {
+        "avg_factscore": 0.6452802076156104,
+        "avg_num_facts": 49.847457627118644,
+        "avg_correct_facts": 35.28813559322034,
+        "avg_incorrect_facts": 14.559322033898304,
+        "avg_correct_percentage": 0.7079224753485209
+    },
+    "Llama-2-FactTune-FS": {
+        "avg_factscore": 0.6304800447142948,
+        "avg_num_facts": 48.52542372881356,
+        "avg_correct_facts": 25.508474576271187,
+        "avg_incorrect_facts": 23.016949152542374,
+        "avg_correct_percentage": 0.5256723716381418
+    },
+    "Llama-2-FactTune-MC": {
+        "avg_factscore": 0.6629157135408702,
+        "avg_num_facts": 45.389830508474574,
+        "avg_correct_facts": 31.593220338983052,
+        "avg_incorrect_facts": 13.796610169491526,
+        "avg_correct_percentage": 0.6960418222554144
+    },
+    "FactTune-FS-wiki": {
+        "avg_factscore": 0.3473758057371686,
+        "avg_num_facts": 50.32203389830509,
+        "avg_correct_facts": 43.067796610169495,
+        "avg_incorrect_facts": 7.254237288135593,
+        "avg_correct_percentage": 0.8558437184237117
+    },
+    "Llama-2-FactTune-FS-wiki": {
+        "avg_factscore": 0.7593660446413051,
+        "avg_num_facts": 40.76271186440678,
+        "avg_correct_facts": 40.52542372881356,
+        "avg_incorrect_facts": 0.23728813559322035,
+        "avg_correct_percentage": 0.9941787941787942
+    },
+    "Llama-1-7B": {
+        "avg_factscore": 0.4081916942213426,
+        "avg_num_facts": 49.33898305084746,
+        "avg_correct_facts": 38.016949152542374,
+        "avg_incorrect_facts": 11.322033898305085,
+        "avg_correct_percentage": 0.7705255925798694
+    }
+}

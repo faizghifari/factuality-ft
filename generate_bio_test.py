@@ -22,13 +22,14 @@ parser.add_argument(
     default="./test_names.txt",
     type=str,
 )
+parser.add_argument("--few_shot", action="store_true", help="Use few-shot or not")
 args = parser.parse_args()
 
 config = PeftConfig.from_pretrained(args.lora_dir)
 tokenizer = AutoTokenizer.from_pretrained(config.base_model_name_or_path)
 model = AutoModelForCausalLM.from_pretrained(
     config.base_model_name_or_path,
-    device_map="auto",
+    device_map="cuda",
     torch_dtype=torch.bfloat16 if torch.cuda.is_bf16_supported else torch.float16,
     use_cache=True,
 )
@@ -37,16 +38,13 @@ merged_model = model.merge_and_unload()
 model.eval()
 
 
-def generate_samples(
-    prompt, bio_prompt, ent, fpath, num_samples=10, max_new_tokens=256
-):
+def generate_samples(prompt, bio_prompt, ent, fpath, num_samples=1, max_new_tokens=256):
     input_ids = tokenizer.encode(prompt, return_tensors="pt").cuda()
 
     output_ids = model.generate(
         input_ids,
+        do_sample=False,
         max_new_tokens=max_new_tokens,
-        do_sample=True,
-        temperature=1.0,
         num_return_sequences=num_samples,
         use_cache=True,
     )
@@ -54,7 +52,10 @@ def generate_samples(
     for idx, output in enumerate(output_ids):
         sample = tokenizer.decode(output, skip_special_tokens=True)
         sample = sample.split(bio_prompt)[-1]
-        sample = sample.split("\n\n")[1]
+        if args.few_shot:
+            sample = sample.split("\n\n")[1]
+        else:
+            sample = sample.strip()
 
         result = {
             "input": bio_prompt,
@@ -98,7 +99,10 @@ if __name__ == "__main__":
     for ent in tqdm(named_entities):
         if ent not in generated_entities:
             bio_prompt = f"Write a short biography of {ent}."
-            prompt = f"{few_shot}{bio_prompt}\n\n"
+            if args.few_shot:
+                prompt = f"{few_shot}{bio_prompt}\n\n"
+            else:
+                prompt = f"{bio_prompt}\n\n"
             try:
                 results = generate_samples(prompt, bio_prompt, ent, args.output_path)
             except IndexError:
